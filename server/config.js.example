@@ -1,0 +1,10 @@
+module.exports = (() => {
+  const port = process.env.PORT || {portNumber},
+    dbUrl = 'mongodb://example.com:{mongoPortNumber}',
+    dbName = '{collectionName}';
+  return {
+    port,
+    dbUrl,
+    dbName,
+  };
+})();
